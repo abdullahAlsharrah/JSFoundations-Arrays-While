@@ -10,7 +10,17 @@
  */
 function isArrayLengthOdd(a) {
   // Your code here
+  const arrayLength = a.length;
+  console.log(arrayLength);
+
+  if (arrayLength % 2 !== 0) {
+    return true;
+  } else {
+    return false
+  }
+
 }
+console.log(isArrayLengthOdd([1, 2, 3 , 4]));
 
 /**
  * isArrayLengthEven(a):
@@ -24,8 +34,18 @@ function isArrayLengthOdd(a) {
  */
 function isArrayLengthEven(a) {
   // Your code here
+  const arrayLength = a.length;
+  console.log(arrayLength);
+
+  if (arrayLength % 2 === 0) {
+    return true;
+  } else {
+    return false
+  }
+
 }
 
+console.log(isArrayLengthEven([1, 2, 3 , 4]));
 /**
  * addLailaToArray(a):
  * - receives array `a`
@@ -36,7 +56,12 @@ function isArrayLengthEven(a) {
  */
 function addLailaToArray(a) {
   // Your code here
+  console.log(a)
+  a.push("Laila");
+  return a;
 }
+
+console.log(addLailaToArray(["Mashary", "Hassan"]))
 
 /**
  * eliminateTeam(a):
@@ -48,7 +73,12 @@ function addLailaToArray(a) {
  */
 function eliminateTeam(a) {
   // Your code here
+  console.log(a);
+  const lastElement = a.pop();
+  return lastElement
+
 }
+console.log(eliminateTeam(["Mshary", "Hassan", "Laila"]));
 
 /**
  * secondHalfOfArrayIfItIsEven(a):
@@ -62,7 +92,15 @@ function eliminateTeam(a) {
  */
 function secondHalfOfArrayIfItIsEven(a) {
   // Your code here
+  console.log(a);
+  const aLength = a.length;
+  if (aLength % 2 ===0) {
+    return a.slice(a.length/2)
+  } else {
+    return [];
+  }
 }
+console.log(secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi"]))
 
 /**
  * youGottaCalmDown(s):
