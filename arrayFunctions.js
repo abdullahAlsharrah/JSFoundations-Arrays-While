@@ -118,18 +118,20 @@ console.log(secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi"]))
  */
 function youGottaCalmDown(s) {
   // Your code here
-    if (s.endsWith("!")) {
-     let i = 0
-     while (s[i] !== "!"){
-       i ++;
-     }
-     return s.slice(0, i+1)
+    // if (s.endsWith("!")) {
+    //  let i = 0
+    //  while (s[i] !== "!"){
+    //    i ++;
+    //  }
+    //  return s.slice(0, i+1)
 
-    } else {
-      return s
+    // } else {
+    //   return s
+    // }
+    while(s.endsWith("!!")) {
+      s = s.slice(0, -1);
     }
-
-
+    return s;
 }
 console.log(youGottaCalmDown("hello!!!!!"));
 
